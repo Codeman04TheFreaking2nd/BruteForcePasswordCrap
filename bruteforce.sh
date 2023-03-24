@@ -1,7 +1,7 @@
 #!/bin/bash
 
 user="targetuser"
-passwords="/path/to/passwords.txt"
+passwords="/path/to/passwords.sh"
 url="https://example.com/login"
 
 while read password; do
