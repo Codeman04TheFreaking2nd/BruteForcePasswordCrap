@@ -11,4 +11,4 @@ while read password; do
         echo "Success! Password is: $password"
         break
     fi
-done < $passwords
+done < <(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 100)
